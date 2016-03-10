@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   resources :articles
   
   get 'signup', to: 'users#new'
+  get 'show', to: 'users#show'
   #post 'users', to: 'users#new'
   resources :users, except: [:new]
   # Example of regular route:
