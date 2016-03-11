@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   
   get 'signup', to: 'users#new'
   get 'show', to: 'users#show'
+  
   #post 'users', to: 'users#new'
   resources :users, except: [:new]
   # Example of regular route:
